@@ -1,0 +1,32 @@
+{
+	"name": "ignitetech_node_automator",
+	"version": "1.0.0",
+	"description": "Ignitetech Node server for Automation",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www"
+	},
+	"dependencies": {
+		"autoprefixer-core": "^5.2.1",
+		"bcrypt-nodejs": "0.0.3",
+		"body-parser": "~1.15.1",
+		"cookie-parser": "~1.4.3",
+		"cors": "^2.8.4",
+		"debug": "~2.2.0",
+		"express": "~4.13.4",
+		"express-fileupload": "0.0.5",
+		"express-session": "^1.14.2",
+		"lodash": "^4.17.4",
+		"moment": "^2.20.1",
+		"morgan": "~1.7.0",
+		"multer": "^1.2.0",
+		"nodemailer": "^2.6.4",
+		"nodemon": "^1.17.5",
+		"querystring": "^0.2.0",
+		"request": "^2.87.0",
+		"serve-favicon": "~2.3.0",
+		"smartsheet": "^1.3.0"
+	},
+	"author": "Olushola Adedokun",
+	"license": "ISC"
+}
