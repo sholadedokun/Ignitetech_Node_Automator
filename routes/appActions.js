@@ -188,7 +188,7 @@ function getAuthorised(next) {
 				client_id: "266809ae-388c-4341-8243-9f98f189e2f1",
 				// scope: "https://graph.microsoft.com/.default",
 				response_type: "code",
-				redirect_uri: "localhost:3000/appActions/receiveConsent",
+				redirect_uri: "https://ignitetech-node-automator.herokuapp.com/appActions/receiveConsent",
 				response_mode: "query",
 				scope: "offline_access user.Read files.ReadWrite",
 				client_secret: "rynaXZHY803}++crwQTX52{"
