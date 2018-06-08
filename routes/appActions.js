@@ -180,23 +180,23 @@ function getUserToken(next) {
 	);
 }
 function getAuthorised(next) {
+	// scope: "https://graph.microsoft.com/.default",
+	// client_secret: "rynaXZHY803}++crwQTX52{"
+	//grant_type: "client_credentials"
 	request(
 		{
 			url: "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
 			method: "GET",
 			form: {
 				client_id: "266809ae-388c-4341-8243-9f98f189e2f1",
-				// scope: "https://graph.microsoft.com/.default",
 				response_type: "code",
 				redirect_uri: "https://ignitetech-node-automator.herokuapp.com/appActions/receiveConsent",
 				response_mode: "query",
 				scope: "offline_access user.Read files.ReadWrite"
-				// client_secret: "rynaXZHY803}++crwQTX52{"
-				//grant_type: "client_credentials"
 			}
 		},
 		function callback(err, res, body) {
-			console.log(body);
+			console.log(res);
 			if (!err && res.statusCode == 200) {
 				next("", body);
 			} else {
@@ -230,8 +230,8 @@ router.get("/authorise", function(req, res, next) {
 	});
 });
 router.get("/receiveConsent", function(req, res, next) {
-	console.log(req.params);
-	res.json(req.params);
+	console.log(req.query);
+	res.json(req.query);
 });
 
 router.get("/checkLoggedin", function(req, res, next) {
