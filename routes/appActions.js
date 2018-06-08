@@ -190,8 +190,8 @@ function getAuthorised(next) {
 				response_type: "code",
 				redirect_uri: "https://ignitetech-node-automator.herokuapp.com/appActions/receiveConsent",
 				response_mode: "query",
-				scope: "offline_access user.Read files.ReadWrite",
-				client_secret: "rynaXZHY803}++crwQTX52{"
+				scope: "offline_access user.Read files.ReadWrite"
+				// client_secret: "rynaXZHY803}++crwQTX52{"
 				//grant_type: "client_credentials"
 			}
 		},
